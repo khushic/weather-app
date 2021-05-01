@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.current-weather{
+  margin: 2rem;
+}
+
+.rightfloat{
+  text-align: right;
+}
+
+.daily-wrapper{
+  width: 100%;
+  margin: 2rem;
+  display: inline-block;
+}
+
+.daily{
+  width: 12%;
+  display: inline-block;
+  padding: 1rem;
+  border-right-style: solid;
+  border-right-color: black;
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-left-color: black;
+  border-left-width: 1px;
+}
+
+.hourly{
+  width: 100%;
+  margin: 0.5rem 2rem;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+}
+
+.headers{
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-custom{
+  border-style: solid!important;
+  border-color: grey!important;
+  border-width: 1px!important;
+  border-radius: 3px!important;
+}
+
+.selected{
+  background: #87CEEB!important;
+}
+
+.not-selected{
+  background: #d3d3d3!important;
+}
