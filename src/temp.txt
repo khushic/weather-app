@@ -1,0 +1,1 @@
+<CurrentWeather temp={tempInfo['temp']} realfeel={tempInfo['feels_like']} min={tempInfo['temp_min']} max={tempInfo['temp_max']}/>
