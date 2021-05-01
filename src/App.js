@@ -13,11 +13,12 @@ function App() {
   const [daily, setDaily] = useState([]);
   const [zip, setZip] = useState("22904");
 
-  const handleChange = () => {
+  const buttonClick = () => {
     var curr_zip = document.getElementById("zipcode");
-    console.log(curr_zip);
     if(curr_zip!=null){
-      setZip(curr_zip.value);
+      if(curr_zip.value != ""){
+        setZip(curr_zip.value);
+      }
     }
   };
 
@@ -107,13 +108,11 @@ function App() {
   }
   return (
     <div style={{ textAlign: "center", margin: "2rem"}}>
-      <form style={{ width: "100%", textAlign:"center"}}>
-        <label>
-          Zipcode to Search For: &nbsp;
-          <input id="zipcode" type="text" name="name" />
-        </label>
-        <button onClick={handleChange()}/>
-      </form>
+      <label>
+      Zipcode to Search For: &nbsp;
+      <input id="zipcode" type="text" name="name" />
+      </label>
+      <button class="btn btn-custom" onClick={buttonClick()}>Search!</button>
       <h4 className="headers header-top">Current Temperature</h4>
       <CurrentWeather temp={tempInfo['temp']} realfeel={tempInfo['feels_like']} humidity={tempInfo['humidity']} clouds={tempInfo['clouds']} wind_speed={tempInfo['wind_speed']}/>
       <div style={{ display: "inline-block" }}>
